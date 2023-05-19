@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="#" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bible</title>
+
+  </head>
+  <body>
+    <body style="background-color: rgb(148, 173, 196)"></body>
+    <style>
+      html {
+        background-blend-mode: overlay;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+      }
+      .registration {
+        padding: 50px 0;
+      }
+
+      .registration form {
+        max-width: 800px;
+        padding: 50px 70px;
+        border-radius: 10px;
+        box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+        background-color: rgb(251, 251, 249);
+      }
+
+      .registration form h3 {
+        font-weight: bold;
+        margin-bottom: 30px;
+      }
+
+      .registration .item {
+        border-radius: 10px;
+        margin-bottom: 25px;
+        padding: 10px 20px;
+      }
+      button {
+        margin: 0 auto;
+        display: block;
+      }
+      .registration .create-account {
+        border-radius: 30px;
+        padding: 10px 20px;
+
+        font-size: 18px;
+        font-weight: bold;
+        background-color: rgb(148, 173, 196);
+        border: none;
+        color: rgb(13, 13, 13);
+        margin-top: 20px;
+      }
+      .text-center {
+        text-align: center;
+        justify-content: center;
+      }
+      @media (max-width: 576px) {
+        .registration form {
+          padding: 50px 20px;
+        }
+      }
+    </style>
+  
+    <div class="registration">
+      <form action="info.html" target="_blank">
+        <h3 class="text-center">Войти в кабинет</h3>
+        <div class="form-group">
+          <input
+            class="form-control item"
+            type="text"
+            name="username"
+            maxlength="15"
+            minlength="4"
+            pattern="^[a-zA-Z0-9_.-]*$"
+            id="username"
+            placeholder="Логин"
+            required
+          />
+        </div>
+      <div>
+          <input
+            class="form-control item"
+            type="password"
+            name="Пароль"
+            minlength="4"
+            id="password"
+            placeholder="Пароль"
+            required
+          />
+        </div>
+      <div>
+          <button
+            class="btn btn-primary btn-block create-account"
+            type="submit"
+          >
+            Вход в аккаунт
+          </button>
+
+        </div>
+      </form>
+    </div>
+  </div>
+  
+  
+  </body>
+</html>
